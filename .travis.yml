@@ -7,6 +7,8 @@ install:
     # update aptitude
     - sudo apt-get update -y
 
+    - sudo apt-get install -y aptitude
+
     # install aptitude packages
     - LDFLAGS=-lm sudo aptitude install -y $(< requirements)
 
