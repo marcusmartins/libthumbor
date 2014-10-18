@@ -20,7 +20,9 @@ install:
     # verify both requirements were met
     - INSTALLDIR=$(python -c "import os; import numpy; print(os.path.dirname(numpy.__file__))")
 
-    # check easy_install version
+    # update pip and easy_install versions
+    - pip install --upgrade pip
+    - pip --version
     - pip install --upgrade setuptools
     - easy_install --version
 
