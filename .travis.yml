@@ -22,9 +22,7 @@ install:
 
     # update pip and easy_install versions
     - pip install --upgrade pip
-    - pip --version
     - pip install --upgrade setuptools
-    - easy_install --version
 
     # webp - compiling from source
     - wget "https://webp.googlecode.com/files/libwebp-0.4.0.tar.gz" -O libwebp-0.4.0.tar.gz
